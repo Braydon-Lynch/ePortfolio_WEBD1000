@@ -16,6 +16,10 @@ body{
     background-color: white;
     color: black;
     font-style: normal;
+    display: block;
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0px auto auto auto;
 }
 *{
     margin: 0;
@@ -33,6 +37,7 @@ nav{
     height: 75px;
     line-height: 75px;
     background-color: white;
+    position: sticky;
 }
 nav .navbar-braydon{
     color: black;
@@ -74,17 +79,14 @@ h2{
 link{
     color: black;
 }
-.tab{
-    display: inline-block;
-    margin-left: 40px;
-}
+
+
 #sig{
     float: left;
 }
 #photo{
     height: 380px;
     padding-top: 75px;
-    padding-right: 250px;
     float: right;
 }
 h3{
@@ -94,6 +96,8 @@ p{
     padding-bottom: 75px;
 }
 #writeUp{
+    display: inline-block;
+    margin-left: 40px;
     padding-top: 50px;
 }
 footer{
@@ -107,4 +111,20 @@ footer{
 }
 #contactInfo{
     padding-top: 50px;
+}
+#goalsWriteUp{
+    padding-top: 50px;
+}
+h4{
+    color: rgb(84, 180, 212);
+    text-decoration: underline;
+}
+#profileResume{
+    font-size: 22px;
+}
+#workExperience{
+    font-size: 22px;
+}
+#resumeInfo{
+    font-size: 22px;
 }

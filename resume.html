@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Braydon's e-Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="portfolio_base.css">
         <link rel="stylesheet" href="portfolio_layout.css">
+        <input type="checkbox" id="toggle">
         <nav>
-            <a class="navbar-braydon" href="#">
+            <a class="navbar-braydon" id="pageTitle" href="#">
                 My Resume
             </a>
             <label class="navbar-toggler" for="toggle">
@@ -14,9 +17,6 @@
                 <span class="bar"></span>
             </label>
             <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
@@ -29,40 +29,81 @@
                 <li class="nav-item">
                     <a class="nav-link" href="resume.html">Resume</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
             </ul>
         </nav>
     </head>
     <body>
         <article>
             <h2>&emsp13;</h2>
-            <div class="grid-container">
+            <div class="grid-container" id="resumeTable">
                 <div class="item1"><h1>Braydon Lynch</h1>
                     <p><h5>IT Programmer</h5></p>
                 </div>
-                <div class="item2"><h4>Profile Info</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur<br>
-                        adipiscing elit, sed do eiusmod tempor <br>
-                        incididunt ut labore et dolore magna aliqua.<br>
-                        Ut enim ad minim veniam, quis nostrud <br>
-                        exercitation ullamco laboris nisi ut aliquip<br>
-                        ex ea commodo consequat. Duis aute irure <br>
-                        dolor in reprehenderit in voluptate velit <br>
-                        esse cillum dolore eu fugiat nulla pariatur.<br>
-                         Excepteur sint occaecat cupidatat non <br>
-                         proident, sunt in culpa qui officia deserunt<br>
-                          mollit anim id est laborum.<br>
+                <div class="item2"><h4>Profile</h4>
+                    <p id="resumeInfo"><br>
+                        I am optimistic and cheerful, with an outgoing personality and strong communication
+                        skills. When encountering a challenge, I can analyze the problem independently to find the
+                        best solution. I have a strong sense of responsibility and I am a motivated learner.
+                        I am adaptable in changing work environments. I have gained a lot of abilities in teamwork
+                        and collaboration, which allows me to quickly integrate into a new team.
+                    <br>
                     </p>
                 </div>
-                <div class="item3">Work Experience</div>  
+                <div class="item3"><h4>Work Experience</h4>
+                    <p>
+                        <ul id="resumeInfo">
+                            <li>(2016 - Present)<br>Payzants Home Hardware,<br> Installed Sales Associate</li>
+                            <br>
+                            <li>(2020 - 2022)<br>HRM Volunteer Firefighter</li>
+                            <br>
+                            <li>(2019 - 2021)<br>Waverly Firefighter School,<br> Assistant Instructor</li>
+                        </ul>
+                    <br>
+                    </p>
+                </div>  
                 <div class="item4"><ul>
-                    <li>&#9990 (902)719-6097</li>
-                    <li>&#9993 bgl1999@hotmail.com</li>
-                    <li>&#8962 Middle Sackville, N.S</li>
+                    <li id="resumeInfo">&#9990 (902)719-6097</li>
+                    <li id="resumeInfo">&#9993 bgl1999@hotmail.com</li>
+                    <li id="resumeInfo">&#8962 Middle Sackville, N.S</li>
                 </ul></div>
-                <div class="item5">Education</div>
-                <div class="item6">Skills</div>
-                <div class="item7">References</div>
+                <div class="item5"><h4>Education</h4>
+                    <p>
+                        <ul>
+                            <li id="resumeInfo">(2023)<br>Nova Scotia Community College,<br> IT Programming</li>
+                            <br>
+                            <li id="resumeInfo">(2020)<br>Nova Scotia Firefighters School,<br> Level 1 & 2 Firefighter</li>
+                            <br>
+                            <li id="resumeInfo">(2018)<br>Millwood High School,<br>Highschool Diploma</li>
+                        </ul>
+                    <br>
+                    </p>
+                </div>
+                <div class="item6"><h4>Skills</h4>
+                    <p>
+                      <ul id="resumeInfo">
+                        <li> - HTML</li><br>
+                        <li> - CSS</li><br>
+                        <li> - JavaScript</li><br>
+                        <li> - Windows</li><br>
+                        <li> - GitHub</li><br>
+                        <li> - SQL</li>
+                      </ul>  
+                    </p>
+                </div>
+                <div class="item7"><h4>Certifications and Training</h4><br>
+                    <ul id="resumeInfo"><br>
+                        <li> - Point of Sale (Eagle System) Training</li><br>
+                        <li> - Quoting Software (Kohltech) Training</li><br>
+                        <li> - Firefighter Level 1 & 2 per NFPA 1001</li><br>
+                        <li> - Hazardous Materials Awareness and Operations Certified</li><br>
+                        <li> - Medical First Responder CPR(BLS): Canadian Red Cross 2020</li><br>
+                        <li> - NSFS - FFI Fire Control Certificate</li><br>
+                        <li> - NSFS - Vehicle Extraction Certificate</li><br>
+                    </ul>
+                </div>
               </div>
             <p>
 

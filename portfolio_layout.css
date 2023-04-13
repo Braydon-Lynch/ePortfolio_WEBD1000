@@ -1,54 +1,13 @@
 @charset "UTF-8";
-/*
-Author: Braydon Lynch
-Date created: 02/016/23
-Description: CSS file for resume page.
-*/
 
-
-/*@media only screen and (max-width: 480px) {
-	Mobile Phone
-
-  nav .mainMenu{
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    transition: top 1s ease;
-    display: none;
-  }
-  nav .mainMenu{
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  nav .openMenu{
-    display: block;
-  }
-  nav .mainMenu li a:hover{
-    background: none;
-    color: orange;
-    font-size: 1.6rem;
-  }
-}
-*/
-
-@media (max-width: 935px){  /*@media only screen and (min-width: 481px) { */
- /*Tablet*/
+@media (min-width: 916px){  
+ /*Desktop*/
   nav{
     padding: 0 2rem;
   }
   nav .nav-list .nav-item{
     padding: 0 20px;
   }
-  /*
   .item1 { grid-area: header; }
   .item2 { grid-area: profileInfo; }
   .item3 { grid-area: workExperience; }
@@ -79,14 +38,15 @@ Description: CSS file for resume page.
     padding-left: 20px;
     border-bottom: solid black;
     border-right: solid black;
-  }*/
+  }
 }
 
-@media (max-width: 675px){
+@media (max-width: 915px){
+  /*Phone and Tablet*/
   nav .nav-list{
     display: grid;
     position: absolute;
-    background: grey;
+    background: white;
     width: 100%;
     top: 75px;
     left: 0;
