@@ -19,12 +19,10 @@
   .grid-container {
     display: grid;
     grid-template-areas:
-      'header header contactInfo'
-      'profileInfo workExperience workExperience'
-      'skills workExperience workExperience'
-      'skills education education'
-      'skills education education'
-      'references references references';
+      'header header contactInfo contactInfo'
+      'profileInfo skills skills skills'
+      'workExperience workExperience education education'
+      'references references references references';
     gap: 10px;
     background-color: white;
     padding: 10px;
@@ -95,16 +93,4 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3){
   transform: rotate(-45deg);
 }
 
-/*@media only screen and (min-width: 801px) {
-	Desktop
-   header nav ul {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-   }
-   header nav ul li {
-      flex: 0 1 auto;
-   }
-}
-*/
 
