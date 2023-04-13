@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*
+Author: Braydon Lynch
+Date created: 02/016/23
+Description: CSS file for resume page.
+*/
+
+@media only screen and (max-width: 480px) {
+	/*Mobile Phone*/
+
+}
+
+@media only screen and (min-width: 481px) {
+	/*Tablet*/
+  .item1 { grid-area: header; }
+  .item2 { grid-area: profileInfo; }
+  .item3 { grid-area: workExperience; }
+  .item4 { grid-area: contactInfo; }
+  .item5 { grid-area: education; }
+  .item6 { grid-area: skills; }
+  .item7 { grid-area: references; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header contactInfo'
+      'profileInfo workExperience workExperience'
+      'skills workExperience workExperience'
+      'skills education education'
+      'skills education education'
+      'references references references';
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px 0;
+    font-size: 30px;
+    padding-left: 20px;
+    border-bottom: solid black;
+    border-right: solid black;
+  }  
+}
+
+@media only screen and (min-width: 768px) {
+	/*Desktop*/
+
+}
+
