@@ -4,9 +4,42 @@ Author: Braydon Lynch
 Date created: 02/016/23
 Description: CSS file for resume page.
 */
+a#navicon {
+  display: none;
+}
 
 @media only screen and (max-width: 480px) {
 	/*Mobile Phone*/
+
+  nav .mainMenu{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu{
+    display: block;
+  }
+  nav .mainMenu li a:hover{
+    background: none;
+    color: orange;
+    font-size: 1.6rem;
+  }
+
 
 }
 
@@ -45,8 +78,15 @@ Description: CSS file for resume page.
   }  
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 801px) {
 	/*Desktop*/
-
+   header nav ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+   }
+   header nav ul li {
+      flex: 0 1 auto;
+   }
 }
 
