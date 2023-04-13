@@ -4,12 +4,10 @@ Author: Braydon Lynch
 Date created: 02/016/23
 Description: CSS file for resume page.
 */
-a#navicon {
-  display: none;
-}
 
-@media only screen and (max-width: 480px) {
-	/*Mobile Phone*/
+
+/*@media only screen and (max-width: 480px) {
+	Mobile Phone
 
   nav .mainMenu{
     height: 100vh;
@@ -39,12 +37,18 @@ a#navicon {
     color: orange;
     font-size: 1.6rem;
   }
-
-
 }
+*/
 
-@media only screen and (min-width: 481px) {
-	/*Tablet*/
+@media (max-width: 935px){  /*@media only screen and (min-width: 481px) { */
+ /*Tablet*/
+  nav{
+    padding: 0 2rem;
+  }
+  nav .nav-list .nav-item{
+    padding: 0 20px;
+  }
+  /*
   .item1 { grid-area: header; }
   .item2 { grid-area: profileInfo; }
   .item3 { grid-area: workExperience; }
@@ -75,11 +79,64 @@ a#navicon {
     padding-left: 20px;
     border-bottom: solid black;
     border-right: solid black;
-  }  
+  }*/
 }
 
-@media only screen and (min-width: 801px) {
-	/*Desktop*/
+@media (max-width: 675px){
+  nav .nav-list{
+    display: grid;
+    position: absolute;
+    background: grey;
+    width: 100%;
+    top: 75px;
+    left: 0;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: .6s;
+  }
+  nav .nav-list .nav-item{
+    padding-left: 35px;
+  }
+  nav .navbar-toggler{
+    display: grid !important;
+  }
+}
+nav .navbar-toggler{
+  display: none;
+  height: min-content;
+  margin: 18px -10px 0 0;
+  cursor: pointer;
+}
+nav .navbar-toggler .bar{
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background: black;
+  border-radius: 10%;
+  transition: .4s;
+}
+input{
+  display: none;
+}
+input:checked ~ nav .nav-list{
+  transform: translateY(0);
+}
+input:checked ~ nav .navbar-toggler{
+  margin-top: 35px;
+}
+input:checked ~ nav .navbar-toggler .bar:nth-child(1){
+  position: absolute;
+  transform: rotate(45deg);
+}
+input:checked ~ nav .navbar-toggler .bar:nth-child(2){
+  display: none;
+}
+input:checked ~ nav .navbar-toggler .bar:nth-child(3){
+  transform: rotate(-45deg);
+}
+
+/*@media only screen and (min-width: 801px) {
+	Desktop
    header nav ul {
       display: flex;
       flex-flow: row nowrap;
@@ -89,4 +146,5 @@ a#navicon {
       flex: 0 1 auto;
    }
 }
+*/
 
