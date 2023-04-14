@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/*
+Author: Braydon Lynch
+Date: 04/14/23
+Description: The css styles page, mainly to detail the media rules.
+*/
+
 @media (min-width: 916px){  
  /*Desktop*/
   nav{
